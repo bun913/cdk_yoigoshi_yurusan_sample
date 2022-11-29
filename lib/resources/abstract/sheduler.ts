@@ -9,5 +9,5 @@ export abstract class Scheduler {
   constructor() {}
   public abstract createResources(): void;
   protected abstract createIamRole(): Role;
-  protected abstract createScheduler(): CfnSchedule;
+  protected abstract createScheduler(roleArn: string): CfnSchedule;
 }
